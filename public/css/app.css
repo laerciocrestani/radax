@@ -1,0 +1,112 @@
+#topbar~#header.header-colored-transparent+#page-title:not(.page-title-classic),
+#topbar~#header.header-dark-transparent+#page-title:not(.page-title-classic),
+#topbar~#header.header-light-transparent+#page-title:not(.page-title-classic),
+#topbar~#header.header-transparent+#page-title:not(.page-title-classic) {
+    padding-top: 200px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+}
+
+.cover {
+    display: block;
+    width: 165px;
+    object-fit: cover;
+    height: 165px;
+    object-position: 50% 50%;
+    margin: 0 auto;
+}
+
+.just-padding {
+    padding: 5px;
+}
+
+.list-group.list-group-root {
+    padding: 0;
+    overflow: hidden;
+}
+
+.list-group.list-group-root .list-group {
+    margin-bottom: 0;
+}
+
+.list-group.list-group-root .list-group-item {
+    border-radius: 0;
+    border-width: 1px 0 0 0;
+    padding: 3px
+}
+
+.list-group.list-group-root > .list-group-item:first-child {
+    border-top-width: 0;
+}
+
+.list-group.list-group-root > .list-group > .list-group-item {
+    padding-left: 13px;
+}
+
+.list-group.list-group-root > .list-group > .list-group > .list-group-item {
+    padding-left: 26px;
+}
+.list-group.list-group-root > .list-group > .list-group > .list-group > .list-group-item {
+    padding-left: 38px;
+}
+.list-group.list-group-root > .list-group > .list-group > .list-group > .list-group > .list-group-item {
+    padding-left: 51px;
+}
+
+.list-group.list-group-root > .list-group > .list-group > .list-group > .list-group > .list-group > .list-group-item {
+    padding-left: 64px;
+}
+
+.list-group.list-group-root > .list-group > .list-group > .list-group > .list-group > .list-group > .list-group > .list-group-item {
+    padding-left: 77px;
+}
+
+.list-group.list-group-root > .list-group > .list-group > .list-group > .list-group > .list-group > .list-group > .list-group > .list-group-item {
+    padding-left: 91px;
+}
+
+.list-group.list-group-root > .list-group > .list-group > .list-group > .list-group > .list-group > .list-group > .list-group > .list-group > .list-group-item {
+    padding-left: 104px;
+}
+
+.list-group-item .fa {
+    margin-right: 5px;
+    width:8px
+}
+
+.collapse {
+  display: none;
+  &.show {
+    display: block;
+  }
+}
+
+a.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+.my-float {
+    margin-top: 16px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.float .fa.fa-whatsapp {
+    color: #FFF;
+    margin-left: 0px;
+}
