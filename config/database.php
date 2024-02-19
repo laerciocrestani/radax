@@ -31,6 +31,7 @@ return [
     |
     */
 
+ 
     'connections' => [
 
         'sqlite' => [
@@ -68,6 +69,17 @@ return [
             'prefix_indexes' => true,
             'schema' => 'public',
             'sslmode' => 'prefer',
+        ],
+
+        'firebird' => [
+            'driver'   => 'firebird',
+            'host'     => env('DB_HOST_FB', 'localhost'),
+            'port'     => env('DB_PORT_FB', '3050'),
+            'database' => env('DB_DATABASE_FB', public_path().'/DBSIC_RFT.FDB'),
+            'username' => env('DB_USERNAME_FB', 'sysdba'),
+            'password' => env('DB_PASSWORD_FB', 'masterkey'),
+            'charset'  => env('DB_CHARSET', 'UTF8'),
+            'role'     => null,
         ],
 
         'sqlsrv' => [

@@ -19,8 +19,7 @@ class ImportacaoController extends Controller
 {
   public function produtos()
   {
-   $leafCategories = Categoria::where('ativo', 1)->get();
-
+    $leafCategories = Categoria::where('ativo', 1)->get();
 
     //$leafCategories = Categoria::get();
 
@@ -32,10 +31,10 @@ class ImportacaoController extends Controller
         $produtos = array();
         foreach ($subgrupos as $cd) {
           echo $cd.'<br>';
-          $produtos_collect = Curl::to('https://vendasradax.sa.ngrok.io/api/v1/site/produtos/subgrupo/' . $cd . '/' . env("API_TOKEN") . '?size=500')->asJson()->get();
+          $produtos_collect = Curl::to('https://vendasradax.sa.ngrok.io/api/v1/site/produtos/subgrupo/' . $cd . '/' . env("API_TOKEN") . '?size=1')->asJson()->get();
           array_push($produtos, $produtos_collect);
         }
-        $produtos = Arr::flatten($produtos);
+        //$produtos = Arr::flatten($produtos);
 
         dd($produtos);
 

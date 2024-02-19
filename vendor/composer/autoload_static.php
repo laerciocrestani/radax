@@ -155,6 +155,7 @@ class ComposerStaticInitf3cff1b90ee3ed04084138459c922488
         ),
         'F' => 
         array (
+            'Firebird\\' => 9,
             'Fideloper\\Proxy\\' => 16,
             'Faker\\' => 6,
         ),
@@ -192,8 +193,8 @@ class ComposerStaticInitf3cff1b90ee3ed04084138459c922488
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Zend\\Diactoros\\' => 
         array (
@@ -337,8 +338,8 @@ class ComposerStaticInitf3cff1b90ee3ed04084138459c922488
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Container\\' => 
         array (
@@ -432,6 +433,10 @@ class ComposerStaticInitf3cff1b90ee3ed04084138459c922488
         'GuzzleHttp\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
+        'Firebird\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/harrygulliford/laravel-firebird/src',
         ),
         'Fideloper\\Proxy\\' => 
         array (
@@ -1249,6 +1254,16 @@ class ComposerStaticInitf3cff1b90ee3ed04084138459c922488
         'Faker\\ValidGenerator' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/ValidGenerator.php',
         'Fideloper\\Proxy\\TrustProxies' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustProxies.php',
         'Fideloper\\Proxy\\TrustedProxyServiceProvider' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustedProxyServiceProvider.php',
+        'Firebird\\Eloquent\\Model' => __DIR__ . '/..' . '/harrygulliford/laravel-firebird/src/Eloquent/Model.php',
+        'Firebird\\FirebirdConnection' => __DIR__ . '/..' . '/harrygulliford/laravel-firebird/src/FirebirdConnection.php',
+        'Firebird\\FirebirdConnector' => __DIR__ . '/..' . '/harrygulliford/laravel-firebird/src/FirebirdConnector.php',
+        'Firebird\\FirebirdServiceProvider' => __DIR__ . '/..' . '/harrygulliford/laravel-firebird/src/FirebirdServiceProvider.php',
+        'Firebird\\Query\\Builder' => __DIR__ . '/..' . '/harrygulliford/laravel-firebird/src/Query/Builder.php',
+        'Firebird\\Query\\Grammars\\Firebird1Grammar' => __DIR__ . '/..' . '/harrygulliford/laravel-firebird/src/Query/Grammars/Firebird1Grammar.php',
+        'Firebird\\Query\\Grammars\\Firebird2Grammar' => __DIR__ . '/..' . '/harrygulliford/laravel-firebird/src/Query/Grammars/Firebird2Grammar.php',
+        'Firebird\\Schema\\Builder' => __DIR__ . '/..' . '/harrygulliford/laravel-firebird/src/Schema/Builder.php',
+        'Firebird\\Schema\\Grammars\\FirebirdGrammar' => __DIR__ . '/..' . '/harrygulliford/laravel-firebird/src/Schema/Grammars/FirebirdGrammar.php',
+        'Firebird\\Support\\Version' => __DIR__ . '/..' . '/harrygulliford/laravel-firebird/src/Support/Version.php',
         'GuzzleHttp\\Client' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Client.php',
         'GuzzleHttp\\ClientInterface' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/ClientInterface.php',
         'GuzzleHttp\\Cookie\\CookieJar' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Cookie/CookieJar.php',

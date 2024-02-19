@@ -12,11 +12,19 @@ use Cart;
 use Illuminate\Support\Facades\Mail;
 use App\Cidade;
 use App\Banner;
+use Illuminate\Support\Facades\DB;
 
 class IndexController extends Controller
 {
   public function index()
   {
+
+
+    // $fb = DB::connection('firebird')->select('* FROM s');
+
+    // dd($fb);
+
+
     $grupos = Curl::to('https://vendasradax.sa.ngrok.io/api/v1/site/grupos/' . env("API_TOKEN"))->asJson()->get();
     $menu_categorias2 = Categoria::where('ativo', 1)->get()->toHierarchy();
     $categoria = Categoria::where('id', 159)->first(); // ALICATES
